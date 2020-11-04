@@ -1,7 +1,15 @@
 # Graylog3-Install-Shell
  
-# 設備加入方法
+# 安裝方法
  
+## CentOS 7 以上
+    yum install -y git
+    git clone https://github.com/BensonRUEI/Graylog3-Install-Shell.git
+    sh Graylog3-Install-Shell/CentOS.sh
+
+
+# 設備設定
+
 ## Forti Syslog
     config global
     config log syslogd2 setting

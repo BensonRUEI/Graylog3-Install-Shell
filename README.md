@@ -1,18 +1,16 @@
 # Graylog3-Install-Shell
-
-
-
+ 
 # 設備加入方法
-
+ 
 ###Forti Syslog
 config global
-config log syslogd2 setting
+  config log syslogd2 setting
     set status enable
     set server "192.168.0.1"
     set port 1514
     set facility syslog
-	end
-
+    end
+ 
 
 #Cisco Netflow
 !

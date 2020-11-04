@@ -4,6 +4,7 @@
  
 ## Forti Syslog
 config global
+
   config log syslogd2 setting
     set status enable
     set server "192.168.0.1"

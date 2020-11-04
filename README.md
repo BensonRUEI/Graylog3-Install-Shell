@@ -2,7 +2,7 @@
  
 # 設備加入方法
  
-###Forti Syslog
+## Forti Syslog
 config global
   config log syslogd2 setting
     set status enable
@@ -12,7 +12,7 @@ config global
     end
  
 
-#Cisco Netflow
+## Cisco Netflow
 !
 flow record Flow-IN
  description IPv4 NetFlow

@@ -61,6 +61,7 @@ sudo yum -y install graylog-server graylog-integrations-plugins
 #root_password_sha2 = 4a22d9475c162f25fe0127f79dc831c9fc168efe73f28f0527d769bd206e2780
 
 echo "http_bind_address" = $WebIP:9000 >> /etc/graylog/server/server.conf
+echo "root_timezone = Asia/Taipei" >> /etc/graylog/server/server.conf
 PWDvar=$(echo -n $WebPassword | sha256sum | cut -d" " -f1)
 sed -i "s/password_secret =/password_secret = $PWDvar/g" /etc/graylog/server/server.conf
 sed -i "s/root_password_sha2 =/root_password_sha2 = $PWDvar/g" /etc/graylog/server/server.conf
